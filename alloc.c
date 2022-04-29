@@ -66,7 +66,7 @@ Meta *getMetaInfo(void *ptr) {
 }
 
 
-void free(void *ptr) {	
+void freeBlock(void *ptr) {	
 	if(!ptr) {
 		return;
 	}
@@ -85,7 +85,7 @@ void *reallocate(void *ptr, size_t size) {
 	}
 
 	void *newPtr;
-	newPtr = alloc(size);
+	newPtr = alloc(size);	
 	if(!newPtr) {
 		return NULL;
 	}

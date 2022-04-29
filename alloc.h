@@ -15,7 +15,7 @@ typedef struct meta{
 
 
 void *alloc(size_t);
-void free(void *);
+void freeBlock(void *);
 void *reallocate(void *, size_t);
 
 #endif
